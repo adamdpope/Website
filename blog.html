@@ -1,0 +1,116 @@
+<html>
+<head>
+<title> Blog | Adam D Pope</title>
+<meta name="keywords" content="Adam Pope, Adam, Pope, IT, Developer, Portfolio, Websites, Graphic Design, Videos">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type='text/javascript'>
+
+async function showall() {
+    var lifeupdates = document.getElementsByClassName('lifeupdates'), i;
+    var news = document.getElementsByClassName('News'), i;
+
+    document.getElementById("filterall").className = "buttonstyle_active";
+    document.getElementById("filterlifeupdates").className = "buttonstyle";
+    document.getElementById("filternews").className = "buttonstyle";
+
+    for (i = 0; i < lifeupdates.length; i += 1) {
+        lifeupdates[i].style.display = 'initial';
+    }
+
+    for (i = 0; i < news.length; i += 1) {
+        news[i].style.display = 'initial';
+    }
+}
+
+async function showlifeupdates() {
+    var lifeupdates = document.getElementsByClassName('lifeupdates'), i;
+    var news = document.getElementsByClassName('News'), i;
+
+    document.getElementById("filterlifeupdates").className = "buttonstyle_active";
+    document.getElementById("filterall").className = "buttonstyle";
+    document.getElementById("filternews").className = "buttonstyle";
+
+    for (i = 0; i < lifeupdates.length; i += 1) {
+        lifeupdates[i].style.display = 'initial';
+    }
+
+    for (i = 0; i < news.length; i += 1) {
+        news[i].style.display = 'none';
+    }
+}
+
+async function shownews() {
+    var lifeupdates = document.getElementsByClassName('lifeupdates'), i;
+    var news = document.getElementsByClassName('News'), i;
+
+    document.getElementById("filternews").className = "buttonstyle_active";
+    document.getElementById("filterall").className = "buttonstyle";
+    document.getElementById("filterlifeupdates").className = "buttonstyle";
+
+    for (i = 0; i < news.length; i += 1) {
+        news[i].style.display = 'initial';
+    }
+
+    for (i = 0; i < lifeupdates.length; i += 1) {
+        lifeupdates[i].style.display = 'none';
+    }
+}
+
+function pagecheck() {
+    var hash = window.location.hash || "";
+    if (hash === "#news"){
+        shownews();
+    }
+    else if (hash === "#lifeupdates") {
+        showlifeupdates();
+    }
+}
+</script>
+</head>
+<body onload="pagecheck();">
+<div id="container">
+<div id="header">
+<div id="navl">   
+<a class="logo" href='index.html'><img src="http://www.adamdpope.co.uk/wp-content/uploads/2016/03/Logo-2015.png" height="40" alt="Adam D Pope"></a>
+</div>
+<div id="navr">
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li> |
+    <li><a href="about.html">About</a></li> |
+    <li><a href="portfolio.html">Portfolio</a></li> |
+    <li><a class="activepage" href="blog.html">Blog</a></li> |
+    <li><a href="contact.html">Contact</a></li> 
+</ul>
+</nav>
+</div>
+</div>
+<div id="content">
+<div id="imgcenter">
+    <div id="portfoliofilter">  
+    <button type="button" id="filterall" class="buttonstyle_active" onclick="showall()">All</button>
+    <button type="button" id="filternews" class="buttonstyle" onclick="shownews()">News</button>
+    <button type="button" id="filterlifeupdates" class="buttonstyle" onclick="showlifeupdates()">Life Updates</button>
+    </div>
+    <p />
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=Website Version 2" class="News"></a>
+    <a href="blogtemplate.html"><img src="http://via.placeholder.com/280x200?text=lifeupdates2" class="lifeupdates"></a>
+    <a href="http://www.adamdpope.co.uk/2015/09/life-update-1-well-this-went-well-or-not/"><img src="http://via.placeholder.com/280x200?text=lifeupdates1" class="lifeupdates"></a>
+    <a href="http://www.adamdpope.co.uk/2015/09/life-update-1-well-this-went-well-or-not/"><img src="http://www.adamdpope.co.uk/wp-content/uploads/2015/09/Life-update-1-Blured.jpg" width="280px" class="lifeupdates"></a>
+    <a href="http://www.adamdpope.co.uk/2014/09/welcome-to-my-new-website/"><img src="http://via.placeholder.com/280x200?text=Welcome to my new website!" class="News"></a>
+</div>
+</div>
+<div id="footer">
+<div id="footerl">   
+© 2014 - <script>document.write(new Date().getFullYear())</script> Adam D Pope<br />
+Coded and designed by <a href="http://www.adamdpope.co.uk" target="_blank">Adam Pope</a> 
+</div>
+<div id="footerr">
+<a class="fade" href="https://www.youtube.com/channel/UCeQ6n-LU3ks2DYtHKQwdXWQ" target="_blank"> <img class="fade" src="http://www.adamdpope.co.uk/wp-content/uploads/2015/07/YouTube-social-squircle_red_48px.png" width="30" alt="YouTube"> </a>
+<a class="fade" href="https://twitter.com/Adamspace" target="_blank"><img class="fade" src="http://www.adamdpope.co.uk/wp-content/uploads/2014/05/twittersmall2.png" width="30" alt="Twitter"> </a>
+<a class="fade" href="http://www.flickr.com/photos/39558267@N07/" target="_blank"> <img src="http://www.adamdpope.co.uk/wp-content/uploads/2014/05/flickrwhite.png" alt="Flickr" width="30" class="fade"></a>
+</div>
+<div style="clear: both"> </div>
+</div>
+</body>
+</html>

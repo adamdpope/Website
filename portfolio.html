@@ -1,0 +1,162 @@
+<html>
+<head>
+<title> Portfolio | Adam D Pope</title>
+<meta name="keywords" content="Adam Pope, Adam, Pope, IT, Developer, Portfolio, Websites, Graphic Design, Videos">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type='text/javascript'>
+
+async function showall() {
+var websites = document.getElementsByClassName('websites'), i;
+var graphicdesign = document.getElementsByClassName('graphicdesign'), i;
+var videos = document.getElementsByClassName('videos'), i;
+
+document.getElementById("filterall").className = "buttonstyle_active";
+document.getElementById("filtergraphicdesign").className = "buttonstyle";
+document.getElementById("filterwebsites").className = "buttonstyle";
+document.getElementById("filtervideos").className = "buttonstyle";
+
+for (i = 0; i < websites.length; i += 1) {
+    websites[i].style.display = 'initial';
+}
+
+for (i = 0; i < graphicdesign.length; i += 1) {
+    graphicdesign[i].style.display = 'initial';
+}
+
+for (i = 0; i < videos.length; i += 1) {
+    videos[i].style.display = 'initial';
+}
+}
+
+async function showgraphicdesign() {
+var websites = document.getElementsByClassName('websites'), i;
+var graphicdesign = document.getElementsByClassName('graphicdesign'), i;
+var videos = document.getElementsByClassName('videos'), i;
+
+document.getElementById("filtergraphicdesign").className = "buttonstyle_active";
+document.getElementById("filterall").className = "buttonstyle";
+document.getElementById("filterwebsites").className = "buttonstyle";
+document.getElementById("filtervideos").className = "buttonstyle";
+
+for (i = 0; i < graphicdesign.length; i += 1) {
+    graphicdesign[i].style.display = 'initial';
+}
+
+for (i = 0; i < websites.length; i += 1) {
+    websites[i].style.display = 'none';
+}
+
+for (i = 0; i < videos.length; i += 1) {
+    videos[i].style.display = 'none';
+}
+}
+
+async function showwebsites() {
+var graphicdesign = document.getElementsByClassName('graphicdesign'), i;
+var websites = document.getElementsByClassName('websites'), i;
+var videos = document.getElementsByClassName('videos'), i;
+
+document.getElementById("filterwebsites").className = "buttonstyle_active";
+document.getElementById("filterall").className = "buttonstyle";
+document.getElementById("filtergraphicdesign").className = "buttonstyle";
+document.getElementById("filtervideos").className = "buttonstyle";
+
+for (i = 0; i < websites.length; i += 1) {
+    websites[i].style.display = 'initial';
+}
+
+for (i = 0; i < graphicdesign.length; i += 1) {
+    graphicdesign[i].style.display = 'none';
+}
+
+for (i = 0; i < videos.length; i += 1) {
+    videos[i].style.display = 'none';
+}
+}
+
+async function showvideos() {
+var graphicdesign = document.getElementsByClassName('graphicdesign'), i;
+var websites = document.getElementsByClassName('websites'), i;
+var videos = document.getElementsByClassName('videos'), i;
+
+document.getElementById("filtervideos").className = "buttonstyle_active";
+document.getElementById("filterall").className = "buttonstyle";
+document.getElementById("filtergraphicdesign").className = "buttonstyle";
+document.getElementById("filterwebsites").className = "buttonstyle";
+
+for (i = 0; i < videos.length; i += 1) {
+    videos[i].style.display = 'initial';
+}
+
+for (i = 0; i < websites.length; i += 1) {
+    websites[i].style.display = 'none';
+}
+
+for (i = 0; i < graphicdesign.length; i += 1) {
+    graphicdesign[i].style.display = 'none';
+}
+}
+
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<div id="navl">   
+<a class="logo" href='index.html'><img src="http://www.adamdpope.co.uk/wp-content/uploads/2016/03/Logo-2015.png" height="40" alt="Adam D Pope"></a>
+</div>
+<div id="navr">
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li> |
+    <li><a href="about.html">About</a></li> |
+    <li><a class="activepage" href="portfolio.html">Portfolio</a></li> |
+    <li><a href="blog.html">Blog</a></li> |
+    <li><a href="contact.html">Contact</a></li> 
+</ul>
+</nav>
+</div>
+</div>
+<div id="content">
+<!-- <div id="imgcenter">
+<h3>Latest Portfolio Entries</h3>
+<a href="#"><img src="http://via.placeholder.com/280x200"></a>
+<a href="#"><img src="http://via.placeholder.com/280x200"></a>
+<a href="#"><img src="http://via.placeholder.com/280x200"></a>
+<a href="https://placeholder.com"><img src="http://via.placeholder.com/280x200"></a>
+</div>
+<p /> -->
+<div id="imgcenter">
+    <div id="portfoliofilter">  
+    <button type="button" id="filterall" class="buttonstyle_active" onclick="showall()">All</button>
+    <button type="button" id="filtergraphicdesign" class="buttonstyle" onclick="showgraphicdesign()">Graphic Design</button>
+    <button type="button" id="filterwebsites" class="buttonstyle" onclick="showwebsites()">Websites</button>
+    <button type="button" id="filtervideos" class="buttonstyle" onclick="showvideos()">Videos</button>
+    </div>
+    <p />
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=graphicdesign" class="graphicdesign"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=graphicdesign" class="graphicdesign"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=graphicdesign" class="graphicdesign"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=graphicdesign" class="graphicdesign"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=websites" class="websites"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=websites" class="websites"></a>
+    <a href="#"><img src="http://via.placeholder.com/280x200?text=websites" class="websites"></a>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/280x200?text=video" class="videos"></a>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/280x200?text=video" class="videos"></a>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/280x200?text=video" class="videos"></a>
+</div>
+</div>
+<div id="footer">
+<div id="footerl">   
+© 2014 - <script>document.write(new Date().getFullYear())</script> Adam D Pope<br />
+Coded and designed by <a href="http://www.adamdpope.co.uk" target="_blank">Adam Pope</a> 
+</div>
+<div id="footerr">
+<a class="fade" href="https://www.youtube.com/channel/UCeQ6n-LU3ks2DYtHKQwdXWQ" target="_blank"> <img class="fade" src="http://www.adamdpope.co.uk/wp-content/uploads/2015/07/YouTube-social-squircle_red_48px.png" width="30" alt="YouTube"> </a>
+<a class="fade" href="https://twitter.com/Adamspace" target="_blank"><img class="fade" src="http://www.adamdpope.co.uk/wp-content/uploads/2014/05/twittersmall2.png" width="30" alt="Twitter"> </a>
+<a class="fade" href="http://www.flickr.com/photos/39558267@N07/" target="_blank"> <img src="http://www.adamdpope.co.uk/wp-content/uploads/2014/05/flickrwhite.png" alt="Flickr" width="30" class="fade"></a>
+</div>
+<div style="clear: both"> </div>
+</div>
+</body>
+</html>
