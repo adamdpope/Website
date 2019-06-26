@@ -1,6 +1,6 @@
-# adamdpope.co.uk - Personal Website
+# adamdpope.co.uk - Personal Website (WIP)
+Rebuild of website to eventually replace WordPress  
 
-WIP
 To Do List:
 - Update Homepage with examples from Portfolio / Blog
 - About Page
