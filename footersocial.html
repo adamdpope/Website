@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Social Footer Test</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+body{
+    color: white;
+    font-family: Calibri;
+    font-size: 13pt;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a:active {color: red;} /* selected link */
+/* a.footerlink:link{color: #ffffff; text-decoration:none;} unvisited link */
+a.footerlink:hover{color: #ffffff; background: #2141cc} /* mouse over link */
+a.footerlink:visited{color: #ffffff;} /* visited link */
+
+#footer{
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    background: #00B0F0;
+    position: fixed;
+    bottom: 0;
+}
+
+#footerl{
+    float: left;
+    text-align: left;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:10px;
+    display:block;
+}
+
+#footerr {
+    float: right;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:16px;
+}
+
+.social {
+  display: inline-flex;
+  background-color: #eaeaea;
+  color: #888;
+  height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  border-radius: 5px;
+  padding: 0;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.6s all; 
+}
+.social__text {
+    max-width: 0px;
+    opacity: 0;
+    transform: translateX(12px);
+    overflow: hidden;
+    transition: 0.6s all; 
+    font-weight: bold;
+}
+.social:hover {
+    max-width: 1000px;
+    padding-right: 16px; 
+}
+.social:hover .social__text {
+      max-width: 1000px;
+      opacity: 1;
+      transform: translateX(0); 
+}
+.social--youtube {
+    background-color: #ff0000;
+    color: white; 
+}
+.social--twitter {
+    background-color: #1ba1f1;
+    color: white; 
+}
+
+.social--github{
+    background-color: #000000;
+    color: white;
+}
+.social--flickr{
+    background-color: #FFFFFF;
+    color: black;
+}
+.social .fab {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+</style>
+</head>
+<body>
+<div id="footer">
+<div id="footerl">   
+© 2014 - <script>document.write(new Date().getFullYear())</script> Adam D Pope<br />
+Coded and designed by <a href="http://www.adamdpope.co.uk" target="_blank" class="footerlink">Adam Pope</a> 
+</div>
+<div id="footerr">
+    <!-- Social Media Icons Code by https://codier.io/@fajarma21 - https://codier.io/creation/S1I9kP69N -->
+    <a href="https://www.youtube.com/channel/UCeQ6n-LU3ks2DYtHKQwdXWQ" class="social social--youtube" target="_blank">
+        <div class="fab fa-youtube"></div>
+        <div class="social__text">Personal Youtube</div>
+    </a>
+    
+    <a href="http://www.youtube.com/cpgamezone" class="social social--youtube" target="_blank">
+        <div class="fab fa-youtube"></div>
+        <div class="social__text">Gaming Youtube</div>
+    </a>
+
+    <a href="https://twitter.com/Adamspace" class="social social--twitter" target="_blank">
+        <div class="fab fa-twitter"></div>
+        <div class="social__text">Twitter</div>
+    </a>
+
+    <a href="https://github.com/adamdpope" class="social social--github " target="_blank">
+        <div class="fab fa-github"></div>
+        <div class="social__text">Github</div>
+    </a>
+<!-- 
+    <a href="http://www.flickr.com/photos/39558267@N07/" class="social social--flickr" target="_blank">
+        <div class="fab fa-flickr"></div>
+        <div class="social__text">Flickr</div>
+    </a> -->
+</div>
+<div style="clear: both"> </div>
+</div>
+</body>
+</html>
